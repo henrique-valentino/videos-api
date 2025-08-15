@@ -1,0 +1,27 @@
+POST http://localhost:3000/videos
+Content-Type: application/json
+
+{
+  "title": "Video Title",
+  "description": "Video Description",
+  "duration": 120
+}
+
+###
+GET http://localhost:3000/videos?search=Title
+
+###
+GET http://localhost:3000/videos/f3e135ac-46f9-4f62-93ea-105b4cdae1fd
+
+###
+PUT http://localhost:3000/videos/f3e135ac-46f9-4f62-93ea-105b4cdae1fd
+Content-Type: application/json
+
+{
+  "title": "Updated Video Title",
+  "description": "Updated Video Description",
+  "duration": 150
+}
+
+###
+DELETE http://localhost:3000/videos/f3e135ac-46f9-4f62-93ea-105b4cdae1fd
